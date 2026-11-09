@@ -1,0 +1,17 @@
+name: Hello
+
+on: 
+  workflow_dispatch:
+
+  # job tells what the workflow should do, there can be one or more than one jobs
+
+jobs:
+# 1st Job
+  say-hello:
+    # creates an ephemeral container with ubuntu running 
+    runs-on: ubuntu-latest
+    steps:
+    - name: Say hello to everyone
+    # run has the command
+      run: echo "Hello Every1"
+  
